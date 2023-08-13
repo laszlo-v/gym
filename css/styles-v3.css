@@ -67,8 +67,7 @@ h4 {
   color: #aeff00;
 }
 h4,
-h5,
-h5 a {
+h5 {
   font-size: clamp(1rem, 2vw + 0.2rem, 1.4rem);
 }
 p {
@@ -103,6 +102,27 @@ button,
 }
 
 /******************* style starts here ****************/
+
+/****************** skip link **********************/
+
+/* Style for the skip link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 10px;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Give the skip link focus styles when it's navigated to via keyboard */
+.skip-link:focus {
+  top: 0;
+  opacity: 1;
+}
 
 /******************** dark mode design ******************/
 .darkmode-on {
