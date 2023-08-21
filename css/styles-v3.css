@@ -1135,8 +1135,10 @@ form textarea {
 }
 
 .mySlides-inner div {
-  min-height: 20rem;
+  height: max-content;
+  padding-bottom: 3rem;
 }
+
 .mySlides img {
   display: block;
   width: 100%;
